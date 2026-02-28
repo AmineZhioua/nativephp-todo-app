@@ -5,6 +5,7 @@ import Aura from '@primeuix/themes/aura';
 import LoginForm from './components/LoginForm.vue';
 import RegisterForm from './components/RegisterForm.vue';
 import TodoSection from './components/TodoSection.vue';
+import { ToastService } from 'primevue';
 
 const app = createApp({});
 
@@ -13,6 +14,8 @@ app.use(PrimeVue, {
         preset: Aura
     }
 });
+
+app.use(ToastService);
 
 app.component("login-form", LoginForm);
 app.component("register-form", RegisterForm);
