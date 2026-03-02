@@ -33,7 +33,7 @@
 
         <native:bottom-nav label-visibility="labeled">
             <native:bottom-nav-item id="home" icon="home" label="Home" url="/" />
-            <native:bottom-nav-item id="Completed" icon="person" label="Account" url="/completed" />
+            <native:bottom-nav-item id="completed" icon="done" label="Completed" url="/completed" />
         </native:bottom-nav>
     </div>
 </body>

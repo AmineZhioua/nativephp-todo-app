@@ -28,4 +28,12 @@ export class TodoService {
             }
         });
     };
+
+    async updateTodo(url, data) {
+        return axios.put(url, data, {
+            headers: {
+                "Content-Type": "appliaction/json"
+            }
+        });
+    };
 };

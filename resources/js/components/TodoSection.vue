@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue';
 import Todo from './Todo.vue';
 import { TodoService } from '../services/todo.service';
-import { useToast, Toast } from 'primevue';
+import { useToast, Toast, ProgressSpinner } from 'primevue';
 
     defineOptions({
         name: 'TodoSection'
@@ -39,9 +39,10 @@ import { useToast, Toast } from 'primevue';
 
                 allTodos.value = getResponse.data.todos;
             }
-        } catch(e: any) {
-            console.log("Error in get All Todos: ", error);
+        } catch(err: any) {
+            console.log("Error in get All Todos: ", err);
 
+            error.value = err;
             toast.add({
                 severity: "error",
                 summary: "Error",
@@ -56,8 +57,18 @@ import { useToast, Toast } from 'primevue';
 
 <template>
     <div class="h-full">
+        <!-- Loading State -->
         <div 
-            v-if="allTodos.length > 10"
+            v-if="isLoading"
+            class="flex items-center justify-center h-full"
+        >
+            <ProgressSpinner style="width: 30px; height: 30px" strokeWidth="6" fill="transparent"
+                animationDuration=".5s" aria-label="Custom ProgressSpinner" />
+        </div>
+
+        <!-- Todos Lost -->
+        <div 
+            v-else-if="allTodos.length > 0"
             class="flex flex-col gap-4"
         >
             <Todo 
@@ -67,6 +78,7 @@ import { useToast, Toast } from 'primevue';
             />
         </div>
 
+        <!-- Empty Todos Message -->
         <div 
             v-else
             class="flex flex-col items-center justify-center gap-2 text-center h-full"    
