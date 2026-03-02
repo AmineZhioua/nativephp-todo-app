@@ -2,8 +2,6 @@ import './bootstrap';
 import { createApp } from 'vue';
 import PrimeVue from 'primevue/config';
 import Aura from '@primeuix/themes/aura';
-import LoginForm from './components/LoginForm.vue';
-import RegisterForm from './components/RegisterForm.vue';
 import TodoSection from './components/TodoSection.vue';
 import { ToastService } from 'primevue';
 
@@ -17,8 +15,6 @@ app.use(PrimeVue, {
 
 app.use(ToastService);
 
-app.component("login-form", LoginForm);
-app.component("register-form", RegisterForm);
 app.component("todo-section", TodoSection);
 
 app.mount('#app');

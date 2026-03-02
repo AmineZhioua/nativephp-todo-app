@@ -1,6 +1,6 @@
 <x-app-layout>
     {{-- Main Section --}}
-    <div class="mt-4 p-4">
+    <div class="mt-4 p-4 h-full">
         <h1 class="font-bold text-2xl mb-4">Your Todos</h1>
 
         {{-- Todo Cards Section --}}
