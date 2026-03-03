@@ -30,13 +30,6 @@ import { useToast, Toast, ProgressSpinner } from 'primevue';
             const getResponse = await todoService.getTodos("http://10.0.2.2:8000/api/todos");
 
             if(getResponse.status === 200) {
-                toast.add({
-                    severity: "success",
-                    summary: "Success",
-                    detail: "Todos done",
-                    life: 3000
-                });
-
                 allTodos.value = getResponse.data.todos;
             }
         } catch(err: any) {
@@ -75,6 +68,7 @@ import { useToast, Toast, ProgressSpinner } from 'primevue';
                 v-for="todo in allTodos"
                 :key="todo.id"
                 :todo="todo"
+                @refetch-on-success="getAllTodos"
             />
         </div>
 
