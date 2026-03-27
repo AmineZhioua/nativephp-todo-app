@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d00acb16920ebafae25bc09ab019de05",
+    "content-hash": "b3ce4a66b57e93950782ed1d110caaa3",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2411,16 +2411,16 @@
         },
         {
             "name": "nativephp/mobile",
-            "version": "3.0.4",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/NativePHP/mobile-air.git",
-                "reference": "f626c1aa604a8b1096e2c630dfdb7eb7e273a6bc"
+                "reference": "8633539a5318066d5d2fd83e829e26d4ebff9b7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NativePHP/mobile-air/zipball/f626c1aa604a8b1096e2c630dfdb7eb7e273a6bc",
-                "reference": "f626c1aa604a8b1096e2c630dfdb7eb7e273a6bc",
+                "url": "https://api.github.com/repos/NativePHP/mobile-air/zipball/8633539a5318066d5d2fd83e829e26d4ebff9b7d",
+                "reference": "8633539a5318066d5d2fd83e829e26d4ebff9b7d",
                 "shasum": ""
             },
             "require": {
@@ -2428,8 +2428,8 @@
                 "ext-dom": "*",
                 "ext-simplexml": "*",
                 "guzzlehttp/guzzle": "^7.9",
-                "illuminate/contracts": "^10.0|^11.0|^12.0",
-                "illuminate/support": "^10.0|^11.0|^12.0",
+                "illuminate/contracts": "^10.0|^11.0|^12.0|^13.0",
+                "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
                 "laravel/prompts": "^0.1.1|^0.2|^0.3",
                 "php": "^8.3",
                 "react/datagram": "^1.10",
@@ -2441,7 +2441,7 @@
                 "laravel/pint": "^1.0",
                 "nunomaduro/collision": "^7.9",
                 "orchestra/testbench": "^8.18",
-                "pestphp/pest": "^2.7",
+                "pestphp/pest": "^2.7|^3.0|^4.0",
                 "pestphp/pest-plugin-arch": "^2.0",
                 "pestphp/pest-plugin-laravel": "^2.0",
                 "phpstan/extension-installer": "^1.1",
@@ -2488,9 +2488,9 @@
             ],
             "support": {
                 "issues": "https://github.com/NativePHP/mobile-air/issues",
-                "source": "https://github.com/NativePHP/mobile-air/tree/3.0.4"
+                "source": "https://github.com/NativePHP/mobile-air/tree/3.1.1"
             },
-            "time": "2026-02-17T14:41:23+00:00"
+            "time": "2026-03-23T15:29:06+00:00"
         },
         {
             "name": "nesbot/carbon",
