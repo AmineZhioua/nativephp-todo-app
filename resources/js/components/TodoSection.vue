@@ -33,9 +33,8 @@ import { useToast, Toast, ProgressSpinner } from 'primevue';
                 allTodos.value = getResponse.data.todos;
             }
         } catch(err: any) {
-            console.log("Error in get All Todos: ", err);
+            console.error("Error in get All Todos: ", err);
 
-            error.value = err;
             toast.add({
                 severity: "error",
                 summary: "Error",

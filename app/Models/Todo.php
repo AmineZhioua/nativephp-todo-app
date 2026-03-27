@@ -11,8 +11,4 @@ class Todo extends Model
         'description',
         'status'
     ];
-
-    public function simpleUser() {
-        return $this->belongsTo(SimpleUser::class);
-    }
 }
